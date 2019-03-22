@@ -15,7 +15,7 @@ public class Main extends Application {
 	@Override
 	public void start(Stage Stage ) throws Exception {
 	
-		Parent root = FXMLLoader.load(getClass().getResource("PacmanInterface.fxml"));
+		Parent root = FXMLLoader.load(getClass().getResource("GameInterface.fxml"));
 		Scene scene = new Scene(root);
 		Stage.setTitle("Juego");
 		Stage.setScene(scene);
