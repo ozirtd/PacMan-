@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane fx:id="JPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="UI.MainController">
+   <children>
+      <MenuBar fx:id="MenuBar" layoutY="2.0" prefHeight="25.0" prefWidth="600.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="Archivo">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#CreateGame" text="Cargar Juego" />
+                  <MenuItem mnemonicParsing="false" onAction="#GuardarJuego" text="Guardar Juego" />
+                  <MenuItem mnemonicParsing="false" onAction="#Exit" text="Salir" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Ver">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#SaveHallOfFame" text="Mejores Puntajes" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <Label layoutX="454.0" layoutY="41.0" text="Puntuacion : " />
+      <Label fx:id="Score" layoutX="539.0" layoutY="41.0" text="0" />
+   </children>
+</Pane>
